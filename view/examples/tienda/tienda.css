@@ -1,0 +1,162 @@
+body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #34495e;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav span {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .banner {
+      background: #ecf0f1;
+      padding: 60px 20px;
+    }
+
+    .banner h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .item {
+      width: 220px;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .item h3 {
+      font-size: 1.1em;
+      margin: 10px 0 5px;
+    }
+
+    .item p {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .item span {
+      display: block;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .item button {
+      background: #2980b9;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    .item button:hover {
+      background: #21618c;
+    }
+
+    .categorias {
+      margin-top: 30px;
+      font-weight: bold;
+      color: #333;
+      font-size: 1.2em;
+    }
+
+    .contacto form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+      gap: 10px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    /* 🌐 RESPONSIVE */
+    @media (max-width: 768px) {
+      .item {
+        width: 45%;
+      }
+
+      nav {
+        gap: 10px;
+        font-size: 0.95em;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .item {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.9em;
+      }
+
+      .banner h2 {
+        font-size: 1.5em;
+      }
+    }

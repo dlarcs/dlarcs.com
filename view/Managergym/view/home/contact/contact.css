@@ -1,0 +1,85 @@
+/* --------------Contact Section */
+.form{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(226, 232, 253);
+  align-items: center;
+  padding: 3rem 0;
+
+  container-name: form;
+  container-type: inline-size;
+}
+.form_form{
+  padding: 12px;
+  max-width: 600px;
+  width: 100%;
+  display: grid;
+  margin-bottom: 30px;
+}
+.form_input_container :is(input, textarea){
+  width: 100%;
+  padding: 9px;
+  font-size: 1rem;
+  margin: 4px;
+  border:none;
+  box-shadow: 2px 2px 9px #0003;
+  background-color: #fffd;
+}
+.form_input_container textarea{
+  resize: none;
+  min-height: 120px;
+  font-family: inherit;
+}
+.form_input_container input[type="submit"]{
+  padding: 12px;
+  background-color: rgb(255, 198, 88);
+  color:#000;
+}
+.form_title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+/* -------------FORM QUERIES */
+
+@container form (min-width: 800px) {
+  .form_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name lastname"
+      "email email"
+      "message message"
+      "button button";
+    gap: 12px;
+    background-color: linear-gradient(#18233f06, #18233f33);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 40px #0006;
+  }
+
+  .form_input_container:first-child {
+    grid-area: name;
+  }
+
+  .form_input_container:nth-child(2) {
+    grid-area: lastname;
+  }
+
+  .form_input_container:nth-child(3) {
+    grid-area: email;
+  }
+
+  .form_input_container:nth-child(4) {
+    grid-area: message;
+  }
+
+  .form_input_container:nth-child(5) {
+    grid-area: button;
+  }
+  .form_input_container :is(input, textarea){
+    box-shadow: 0;
+    border-radius: 4px;
+  }
+}

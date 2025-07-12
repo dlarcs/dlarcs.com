@@ -1,0 +1,133 @@
+/* -------  HEADER SECCION */
+.header_menu{
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  container-type: inline-size;
+  container-name: header;
+  background-color: #000;
+  z-index: 1000;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Pacifico', cursive;
+}
+.container_name{
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  margin: auto;
+  flex-direction: row;
+}
+.container_name img{
+  position: relative;
+  max-width: 50px;
+}
+.container_name h1{
+  position: relative;
+  margin: auto;
+  color: #fffd;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.header_open_nav_buttom{
+  position: absolute;
+  right: 20px;
+  color: #fffd;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0;
+}
+.header_close_nav_buttom{
+  position: absolute;
+  right: 20px;
+  color: #fffd;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.header_checkbox{
+  display: none;
+}
+.header_nav{
+  display: none;
+  position: absolute;
+  height: 65vh;
+  width: 100vw;
+  top:0;
+  z-index: -1;
+}
+
+.header_checkbox:checked ~ .header_nav{
+  display: flex;
+}
+.header_close_nav_buttom {
+display: none;
+}
+/* Cuando el checkbox está activado */
+#open_menu:checked ~ .header_open_nav_buttom {
+  display: none; /* Ocultamos el ☰ */
+}
+
+#open_menu:checked ~ .header_close_nav_buttom {
+  display: inline; /* Mostramos la X */
+}
+
+#open_menu:checked ~ .menu {
+  display: block; /* Mostramos el menú */
+}
+/* .header_logo{
+  max-width: 100%;
+  width: 64px;
+  margin: 10px 20px;
+  z-index: 15;
+} */
+.header_nav_list{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  margin: auto;
+  justify-content: space-evenly;
+  z-index: -1;
+}
+.header_nav_item{
+  list-style: none;
+}
+.header_nav_item a{
+  color: #fffd;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.header_nav_item a:hover{
+  text-decoration: underline;
+}
+/* -------HEADER QUERIS */
+@container header (min-width:980px){
+  .header_nav{
+    position: relative;
+    height: auto;
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+
+  .header_menu img{
+    position: relative;
+    width: 60px;
+  }
+  .header_nav_list{
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    gap:20px;
+    margin-right: 20px;
+  }
+  .header_open_nav_buttom{
+    display: none;
+  }
+  .header_close_nav_buttom {
+  display: none;
+}
+
+/* --------HEADER END */

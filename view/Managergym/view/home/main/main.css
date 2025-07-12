@@ -1,0 +1,147 @@
+.profile{
+  container-type:inline-size;
+  container-name:profile;
+  background-color: rgb(255, 198, 88);
+  text-wrap:balance;
+}
+.profile_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1400px;
+  padding: 1rem 0;
+}
+/* ------------CONTAINER IMG */
+
+.profile_img_container{
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+.profile_img_container h1{
+  margin: auto;
+  color: black);
+  font-size: 2rem;
+
+}
+.profile_img{
+  max-width: 100%;
+  width: 500px;
+  margin: auto;
+}
+/* ---------------CONTAINER DATA */
+.profile_data_container{
+  max-width: 600px;
+  padding: 1rem;
+  background-color: black;
+
+}
+
+.profile_description p{
+  color: white;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.profile_description h1{
+  color: rgb(255, 198, 88);
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+/* -----------SKILLS */
+.profile_skills-container h2{
+  color: rgb(255, 198, 88);
+  font-size: 1.5rem;
+}
+.profile_skill{
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  max-width: 600px;
+  margin-left: 0;
+  align-items: center;
+}
+.load_bar{
+  border: 2px solid rgb(255, 198, 88);
+  border-radius: 8px;
+  color: white;
+  padding: 2px;
+  font-size: 1rem;
+  width:80%;
+  margin: 4px;
+  margin-left: 0;
+}
+.load_bar_bar{
+  background-color: rgb(255, 198, 88);
+  border-radius: 6px;
+  padding: 4px;
+}
+.bar_80{
+  width: 80%;
+}
+.bar_60{
+  width: 60%;
+}
+.bar_70{
+  width: 70%;
+}
+.bar_90{
+  width: 90%;
+}
+.profile_skill_name{
+  color:rgb(255, 198, 88);
+}
+/* ----------PROFILE QUERIES */
+
+@container profile (min-width: 690px) {
+
+  .profile_wrapper {
+    padding: 1rem;
+    margin: auto;
+    height: auto;
+  }
+  .profile_data{
+    max-width: 620px;
+  }
+  .profile_data_container{
+    background-color:black;
+    display: flex;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 0px 0px 40px #0002;
+    margin: auto;
+  }
+  .profile_img{
+    height: 100%;
+    object-fit: cover;
+    width: 600px;
+    margin:auto;
+
+  }
+  .profile_img_container{
+    padding: 2rem 0;
+    max-height: initial;
+  }
+  .profile_description p{
+    color: white;
+  }
+  .profile_description h1{
+    margin-top: 0;
+    font-size: 4rem;
+    text-wrap:balance;
+  }
+}
+@container profile (min-width: 1080px) {
+  .profile{
+    padding:  20px 0 0 0;
+  }
+  .profile_wrapper {
+
+   background-color:#E8E8E8;
+   flex-direction: row;
+  }
+
+}

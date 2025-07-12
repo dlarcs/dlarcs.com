@@ -1,0 +1,130 @@
+.seccion2{
+  position: relative;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  max-width: 100vw;
+
+  padding:  3rem 0;
+  margin: auto;
+
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  gap: 10px;
+}
+/* -------------TITLE */
+.container-title-port{
+  position: relative;
+  width: 100vw;
+  padding: 2rem 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+/* ------------BOX llenado linear*/
+.box{
+  background-color: white;
+  border: 3px solid #48d;
+  padding: 6px;
+  border-radius: 39px;
+  width: 80%;
+}
+.barra{
+  padding: 10px;
+  background:linear-gradient(135deg, #FF416C, #FF4B2B, #FF6B81);
+  border-radius: 30px;
+  width: 10%;
+  transition: width .6s linear;
+}
+.barra:hover,
+.barra:active{
+  width: 100%;
+  transition-duration: 2s;
+}
+/* -------------BOX 1 llenado por barra */
+.box1{
+  background-color: white;
+  border: 3px solid #48d;
+  padding: 6px;
+  border-radius: 39px;
+  width: 80%;
+}
+.barra1{
+  padding: 10px;
+  background:linear-gradient(135deg, #009FFF, #00C3FF, #00E4FF);
+  border-radius: 30px;
+  width: 10%;
+  transition: width .6s steps(6);
+}
+.barra1:hover,
+.barra1:active{
+  width: 100%;
+  transition-duration: 2s;
+}
+/* -------------BOX 2 llenado por barra */
+.box2{
+  background-color: white;
+  border: 3px solid #48d;
+  padding: 6px;
+  border-radius: 39px;
+  width: 80%;
+}
+.barra2{
+  padding: 10px;
+  background:linear-gradient(135deg, #00F9A6, #00E99C, #00FFCC);
+  border-radius: 30px;
+  width: 10%;
+  transition: width .6s steps(6), background-color .6s steps(6);
+}
+.barra2:hover,
+.barra2:active{
+  width: 100%;
+  transition-duration: 2s;
+  background-color: red;
+}
+.box2:hover,
+.box2:active{
+  transition-duration: 2s;
+  background-color: black;
+}
+/* -------------BOX 3 llenado por barra */
+.box3{
+  background-color: white;
+  border: 3px solid #48d;
+  padding: 6px;
+  border-radius: 39px;
+  width: 80%;
+  transition: border .6s steps(6);
+}
+.barra3{
+  padding: 10px;
+  background:linear-gradient(135deg, #FFE53B, #FFD93B, #FFC93B);
+  border-radius: 30px;
+  width: 10%;
+  transition: width .6s steps(6), background-color .6s steps(6);
+}
+.barra3:hover,
+.barra3:active{
+  width: 100%;
+  transition-duration: 3s;
+  background-color: red;
+}
+.barra3:hover,
+.barra3:active {
+  border: 3px solid red;
+  transition-duration: .6s;
+}

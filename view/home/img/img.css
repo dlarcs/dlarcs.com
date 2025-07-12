@@ -1,0 +1,19 @@
+.img{
+  max-width: 100vw;
+  height: 60vh;
+  margin:  3rem 0 1rem 0;
+  padding: 3rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  background-image:linear-gradient(#000009, #ffd1), url("../../../view/home/img/img/img4.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:top;
+  z-index: 2;
+}
